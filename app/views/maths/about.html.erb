@@ -1,0 +1,17 @@
+
+<h2 class="text-center mt-1">PERFORM YOUR SIMPLE MATHEMATICS CALCULATIONS BELOW</h2>
+
+<%= form_with scope: :math, url: maths_path, method: :post, local: true do |f| %>
+
+<p> <%= f.label :Enter_Your_First_Number %> </br>
+    <%= f.number_field :Enter_Your_First_Number %> </p>
+
+<p> <%= f.label :Enter_Your_Second_Number %> </br>
+    <%= f.number_field :Enter_Your_Second_Number %> </p>
+
+    <%= render 'form' %>
+
+<p> <%= f.label :Your_Result_is %> </br>
+    <%= f.text_field :Your_Result_is %> </p>
+
+<% end %>
