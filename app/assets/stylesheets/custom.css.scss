@@ -5,3 +5,17 @@
     background-color: blue !important;
     
     }
+
+.jumbotron {
+    background-color: whitesmoke !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    // background-image: asset-url('1477273.jpg')
+}
+
+#page-content {
+    flex: 1 0 auto;
+    background-color: lightgrey
+}

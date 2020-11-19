@@ -1,0 +1,32 @@
+<h2 class="text-center mt-3">Hey Your Result Is: </h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if (params[:commit] == "addition") %>
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> + <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+      <% end %>
+    <% if (params[:commit] == "subtraction") %>
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> - <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+    <% end %>
+    <% if (params[:commit] == "multiplication") %>
+    <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> * <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+    <% end %>
+    <% if (params[:commit] == "division") %>
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> / <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+    <% end %>
+    <% if (params[:commit] == "modulus") %>
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> % <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+    <% end %>
+
+  <div class="text-center mt-4">
+    <%= link_to "BACK TO CALCULATOR", about_path, class: "btn btn-success" %>
+  </div>
+
+</body>
+</html>

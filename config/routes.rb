@@ -2,6 +2,6 @@ Rails.application.routes.draw do
   root 'maths#home'
   get 'about', to: 'maths#about'
 
-  resources :maths
-  post 'about', to: 'maths#math'
+  resources :maths, except: [:create]
+  post 'maths', to: 'maths#math'
 end
