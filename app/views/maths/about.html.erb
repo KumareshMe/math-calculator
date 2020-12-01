@@ -1,22 +1,31 @@
 <div id="page-content">
 
-<h2 class="text-center mt-4">PERFORM YOUR SIMPLE MATHEMATIC CALCULATIONS</h2>
-
+<h1 class="text-center mt-4">PERFORM YOUR SIMPLE MATHEMATIC CALCULATIONS</h1>
+<div class="container ml-4">
 <%= form_with scope: :math, url: maths_path, method: :post, local: true do |f| %>
 
 <p> <%= f.label :Enter_Your_First_Number %> </br>
     <%= f.number_field :First_Number %> </p>
 
 <p> <%= f.label :Enter_Your_Second_Number %> </br>
-    <%= f.number_field :Second_Number %> </p>
+    <%= f.number_field :Second_Number %> </p> 
 
-    <%= f.submit :addition %> </br></br>
-    <%= f.submit :subtraction %> </br></br>
-    <%= f.submit :multiplication %> </br></br>
-    <%= f.submit :division %> </br></br>
-    <%= f.submit :modulus %> </br></br>
+    <%= f.submit :addition, class: "btn btn-info" %> </br></br>
+    <%= f.submit :subtraction, class: "btn btn-info" %> </br></br>
+    <%= f.submit :multiplication, class: "btn btn-info" %> </br></br>
+    <%= f.submit :division, class: "btn btn-info" %> </br></br>
+    <%= f.submit :modulus, class: "btn btn-info" %> </br></br>
 
 <% end %>
+</div>
 
-
+</div>
+<div class= "mb-5">
+<footer id="sticky-footer" class="py-2 bg-dark text-white">
+    <div class="container text-center">
+    <div class="text-center mb-2">
+      <small>Copyright &copy; Kumaresh ME</small>
+    </div>
+    </div>
+</footer>
 </div>

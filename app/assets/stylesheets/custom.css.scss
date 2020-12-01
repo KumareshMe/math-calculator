@@ -1,21 +1,34 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-.navbar {
-
-    background-color: blue !important;
-    
-    }
-
 .jumbotron {
     background-color: whitesmoke !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 630px;
     // background-image: asset-url('1477273.jpg')
 }
 
 #page-content {
     flex: 1 0 auto;
-    background-color: lightgrey
+    height: 640px;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: whitesmoke
+   }
+
+#pa-content {
+    margin-top: 15px;
+  }
+
+#result-content {
+    
+    height: 640px;
+    background-image: asset-url('1234.jpg');
+    background-position: center center;
+    margin-right: 25px;
+    margin-left: 25px;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // margin-top: 15px;
 }

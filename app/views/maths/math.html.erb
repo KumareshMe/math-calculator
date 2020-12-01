@@ -1,4 +1,6 @@
-<h2 class="text-center mt-3">Hey Your Result Is: </h2>
+<div id="result-content">
+<div class="container">
+<h2 class="text-center mt-5">Hey Your Result Is: </h2>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,20 +10,21 @@
     <title>Document</title>
 </head>
 <body>
+
     <% if (params[:commit] == "addition") %>
-        <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> + <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number].to_f %> + <%=  params[:math][:Second_Number].to_f %> = <%=@result %></h3> 
       <% end %>
     <% if (params[:commit] == "subtraction") %>
-        <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> - <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number].to_f %> - <%=  params[:math][:Second_Number].to_f %> = <%=@result %></h3> 
     <% end %>
     <% if (params[:commit] == "multiplication") %>
-    <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> * <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number].to_f %> * <%=  params[:math][:Second_Number].to_f %> = <%=@result %></h3> 
     <% end %>
     <% if (params[:commit] == "division") %>
-        <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> / <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number].to_f %> / <%=  params[:math][:Second_Number].to_f %> = <%=@result %></h3> 
     <% end %>
     <% if (params[:commit] == "modulus") %>
-        <h3 class="text-center mt-4"><%= params[:math][:First_Number] %> % <%=  params[:math][:Second_Number] %> = <%=@result %></h3> 
+        <h3 class="text-center mt-4"><%= params[:math][:First_Number].to_f %> % <%=  params[:math][:Second_Number].to_f %> = <%=@result %></h3> 
     <% end %>
 
   <div class="text-center mt-4">
@@ -30,3 +33,5 @@
 
 </body>
 </html>
+</div>
+</div>
